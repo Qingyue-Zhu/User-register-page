@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User register page</title>
+</head>
+
+<body>
+    <!-- method: get, post -->
+    <!-- get is the default method -->
+    <!-- get: If method="get" is used for submission, the data submitted is displayed in the address bar of the browser -->
+    <!-- post: If method="post" is used for submission, the data submitted is NOT displayed in the address bar of the browser -->
+    <form action="http://www.google.com" method="post">
+        <table>
+            <tr>
+                <td>Username</td>
+                <td><input type="text" name="username"></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password" name="userpwd"></td>
+            </tr>
+            <tr>
+                <td>Confirm password</td>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <!-- Give each option the same name, then users can only choose one option -->
+                    <!-- the value submitted to server is M or F or O, not male, female, other -->
+                    <input type="radio" name="gender" value="M">male
+                    <input type="radio" name="gender" value="F">female
+                    <input type="radio" name="gender" value="O">other
+                </td>
+            </tr>
+            <tr>
+                <td>Hobbies</td>
+                <td>
+                    <input type="checkbox" name="interest" value="swim">swim
+                    <input type="checkbox" name="interest" value="skate">skate
+                    <input type="checkbox" name="interest" value="BJJ">BJJ
+                </td>
+            </tr>
+            <tr>
+                <td>Education</td>
+                <td>
+                    <select name="edu">
+                        <option value="diploma">Diploma</option>
+                        <option value="bachelor">Bachelor degree</option>
+                        <option value="master">Master</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Brief introduction</td>
+                <td><textarea name="intro" cols="30" rows="10"></textarea></td>
+            </tr>
+            <tr>
+                <td><input type="submit"></td>
+                <td><input type="reset"></td>
+            </tr>
+
+        </table>
+    </form>
+</body>
+
+</html>
